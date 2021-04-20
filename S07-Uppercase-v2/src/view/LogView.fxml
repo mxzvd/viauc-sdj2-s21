@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="351.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="view.LogViewController" userData="Converter Log" stylesheets="view/Layout.css">
+
+    <children>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <Label prefHeight="67.0" prefWidth="322.0" text="Converter Log">
+                    <font>
+                        <Font name="Comic Sans MS" size="48.0"/>
+                    </font>
+                </Label>
+                <Pane prefHeight="67.0" prefWidth="109.0">
+                    <children>
+                        <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBack"
+                                prefHeight="39.0" prefWidth="77.0" text="Back">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+        <ListView fx:id="logList" editable="false" prefHeight="258.0" prefWidth="554.0"/>
+    </children>
+</VBox>

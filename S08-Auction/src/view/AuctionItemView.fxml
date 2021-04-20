@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="244.0" prefWidth="428.0" userData="Auction item view" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AuctionItemViewController">
+    <children>
+        <HBox spacing="10.0">
+            <children>
+                <Label prefHeight="39.0" prefWidth="42.0" text="Item:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="itemLabel" prefHeight="38.0" prefWidth="254.0" textFill="BLUE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Label fx:id="timeLabel" prefHeight="39.0" prefWidth="69.0" text="00:00:00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="69.0" spacing="10.0">
+            <children>
+                <Label fx:id="currentBidTitle" prefHeight="39.0" prefWidth="100.0" text="Current bid:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="currentBidLabel" prefHeight="39.0" prefWidth="57.0" textFill="BLUE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="66.0" text="Bidder:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="currentBidderLabel" prefHeight="39.0" prefWidth="100.0" textFill="BLUE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+              <HBox spacing="10.0">
+                  <padding>
+                      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+              </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+      <Separator prefWidth="200.0" />
+        <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+            <children>
+                <Label prefHeight="39.0" prefWidth="42.0" text="Bid">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="bidField" onAction="#bidOnAction" prefHeight="39.0" prefWidth="114.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#bidOnAction" prefHeight="39.0" prefWidth="110.0" text="Place bid" fx:id="bidButton">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox layoutX="10.0" layoutY="187.0" spacing="10.0">
+            <children>
+                <Label fx:id="errorLabel" prefHeight="39.0" prefWidth="299.0" text="Error label" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+             </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>
