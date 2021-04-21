@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox stylesheets="view/Layout.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LogViewController" userData="Uppercase log">
+    <children>
+        <HBox alignment="TOP_CENTER">
+            <children>
+                <Label text="Converter Log">
+                    <font>
+                        <Font name="Comic Sans MS" size="48.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <TextField fx:id="inputField" onAction="#onEnter">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </TextField>
+        <ListView fx:id="logList" editable="false" prefHeight="258.0" prefWidth="554.0"/>
+    </children>
+</VBox>
