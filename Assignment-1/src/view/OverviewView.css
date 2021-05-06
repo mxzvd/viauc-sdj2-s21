@@ -1,0 +1,25 @@
+/* Just to have different colored bars, and a bit of shadowing around the edges of the bars in the chart. */
+
+.chart-bar {
+    -fx-effect: innershadow(three-pass-box, #000000, 8, 0, 0, 0);
+}
+
+.data0.chart-bar {
+    -fx-bar-fill: #990011FF;
+}
+
+.data1.chart-bar {
+    -fx-bar-fill: #EEA47FFF;
+}
+
+.data2.chart-bar {
+    -fx-bar-fill: #616247FF;
+}
+
+.data3.chart-bar {
+    -fx-bar-fill: #76528BFF;
+}
+
+.data4.chart-bar {
+    -fx-bar-fill: #2C5F2D;
+}

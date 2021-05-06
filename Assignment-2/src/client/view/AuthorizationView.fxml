@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="300.0" prefWidth="600.0" userData="Chat System | Login" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AuthorizationViewController">
+   <items>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #9DA7A7;">
+         <children>
+            <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" text="Login or Register" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <InnerShadow choke="0.05" color="#00000080" height="50.0" offsetY="1.0" radius="12.0" width="0.0" />
+         </effect>
+      </VBox>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="599.0" style="-fx-background-color: #caefd1;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Username:" textAlignment="CENTER">
+               <font>
+                  <Font name="Ebrima" size="20.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <TextField fx:id="usernameField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0">
+               <effect>
+                  <DropShadow height="12.75" radius="5.1875" width="10.0" />
+               </effect>
+            </TextField>
+            <Label text="Password:">
+               <font>
+                  <Font name="Ebrima" size="20.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <PasswordField fx:id="passwordField" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0">
+               <effect>
+                  <DropShadow height="11.38" radius="4.845000000000001" width="10.0" />
+               </effect>
+            </PasswordField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="60.0" text="Login" textAlignment="CENTER" />
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#register" prefHeight="25.0" prefWidth="60.0" text="Register" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <BoxBlur height="0.5" width="0.8" />
+         </effect>
+      </VBox>
+   </items>
+</SplitPane>
